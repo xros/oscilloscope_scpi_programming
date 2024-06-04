@@ -24,6 +24,7 @@ Docs can be found from [here](static/DHO900_pdf_files_en/) or its [website](http
 |HDMI output | Max at 1920*1080 at 60FPS |Mirroring the screen only|
 |USB 2.0 from back| 1 port | Connected to PC as a client for using SCPI commands and updating firmware|
 |USB 2.0 from front| 1 port | USB host port for extra USB Wi-Fi dongle or USB disks on Android System.|
+|Power| 1 USB-C | Can be powered using power bank at 12V or more |
 |OS | Android 7.1.2 ||
 |Firmware | 00.01.02.00.02 ||
 |System Version | 1.2.2 ||
