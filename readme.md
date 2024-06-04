@@ -71,5 +71,57 @@ Linux, Python libs: pyvisa, pyvisa-py
 
 ## Initiating Software and Hardware
 
+Connect the oscilloscope to the router via Ethernet cable or USB Wi-Fi dongle from the front USB port.
+
 ![image](static/image/Screenshot_20240604_121957.png)
 
+### Install necessary Python libs: pyvisa, pyvisa-py
+
+```bash
+pip install -r requirements.txt
+```
+
+#### Find the device connect-string (IP) automatically
+
+```python
+import pyvisa
+rm = pyvisa.ResourceManager('@py')
+print(rm.list_resources())
+```
+
+You will receive something like
+
+```txt
+('TCPIP::10.31.0.225::INSTR',)
+```
+
+#### Find the device connect-string (IP/USB) manually
+
+##### Find IP manually from device's local web page (Rigol Web Control/LXI)
+
+![m](static/image/Screenshot_20240604_132026.png)
+
+##### Find IP manually from device's Utility-IO tab
+
+![n](static/image/Screenshot_20240604_132722.png)
+
+#### Operate SCPI commands
+
+```python
+inst = rm.open_resource('TCPIP::10.31.0.225::INSTR',)
+inst.query("*IDN?")
+```
+
+The output could be something like
+
+```txt
+'RIGOL TECHNOLOGIES,DHO924S,DHO9XXXXXXXX,00.01.02.00.02\n'
+```
+
+The magic is from `inst.query("*IDN?")`. You can wrap your own SCPI commands. Please read the programming guide from [here](static/DHO900_pdf_files_en/DHO800900_ProgrammingGuide_EN.pdf).
+
+You can also operate SCPI commands from the Rigol Web Control interface.
+
+![mm](static/image/Screenshot_20240604_134624.png)
+
+Happy hacking
