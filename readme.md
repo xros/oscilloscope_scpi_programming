@@ -22,7 +22,7 @@ Docs can be found from [here](static/DHO900_pdf_files_en/) or its [website](http
 |AFG out| 1 port | Arbitrary Function Generator |
 |Ethernet LAN | Max at 1000Mbps full-duplex | Connected to router, screen sharing remotely using webview, and operating SCPI commands remotely via Ethernet |
 |HDMI output | Max at 1920*1080 at 60FPS |Mirroring the screen only|
-|USB 2.0 from back| 1 port | Connected to PC as a client for using SCPI commands and updating firmware|
+|USB 2.0 from back| 1 port | Connected to PC as a client for using SCPI commands and updating firmware. PC needs to install Rigol USB TMC (Test Measurement and Control) Driver.|
 |USB 2.0 from front| 1 port | USB host port for extra USB Wi-Fi dongle or USB disks on Android System.|
 |Power| 1 USB-C | Can be powered using power bank at 12V or more |
 |OS | Android 7.1.2 ||
@@ -62,3 +62,14 @@ Docs can be found from [here](static/DHO900_pdf_files_en/) or its [website](http
 |----|-------|-----------|
 |Digital Channels| 16 ||
 |Extra LA Probes | PLA 2216 | Optional. Needed to buy seperately or D.I.Y. one|
+
+## Software
+
+Rigol DHO924S supports standard **VISA** (Virtual Instrument Software Architecture) as what other companies do such as Anritsu, Bustec, Keysight Technologies, Kikusui, National Instruments, **Rigol**, Rohde & Schwarz, and Tektronix.
+
+Linux, Python libs: pyvisa, pyvisa-py
+
+## Initiating Software and Hardware
+
+![image](static/image/Screenshot_20240604_121957.png)
+
