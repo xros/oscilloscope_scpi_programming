@@ -43,10 +43,10 @@ Docs can be found from [here](static/DHO900_pdf_files_en/) or its [website](http
 
 |Property| Specs | Notice|
 |----|-------|-----------|
-|Name|PVP2350| |
-|Max Freq| 350MHz| |
-|Switch 1X | 1M ohm |For meaturing Voltage within 100V|
-|Switch 10X | 10M ohm |For meaturing Voltage within 300V, also for calibrating probes initially|
+|Name|PVP2350| Passive High-impedance Probe |
+|Max Freq| 350MHz with Switch 10X on| |
+|Switch 1X | 1M ohm |For meaturing Voltage within 100V, 1X BW: DC to 35 MHz|
+|Switch 10X | 10M ohm |For meaturing Voltage within 300V, 10X BW: DC to 350 MHz, also for calibrating probes initially|
 
 #### Properties of the Oscilloscope AFG
 
