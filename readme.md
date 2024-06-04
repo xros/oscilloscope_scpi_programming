@@ -124,4 +124,16 @@ You can also operate SCPI commands from the Rigol Web Control interface.
 
 ![mm](static/image/Screenshot_20240604_134624.png)
 
+## Extra
+
+A photo showing the oscilloscope is decoding I2C protocols in real-time from an Arduino Uno board with an I2C AM2320 humidity and temp sensor
+
+![image](static/image/IMG_1656.jpg)
+
+Demo codes can be found from [here](https://learn.adafruit.com/adafruit-am2320-temperature-humidity-i2c-sensor/arduino-usage)
+
+Key C++ codes about decoding the I2C sensor values, please read [link](https://github.com/adafruit/Adafruit_AM2320/blob/master/Adafruit_AM2320.cpp#L94), C++ header file [here](https://github.com/adafruit/Adafruit_AM2320/blob/master/Adafruit_AM2320.h#L39)
+
+[Datasheet for this AM2320](static/datasheets_for_others/AM2320-datasheet.pdf)
+
 Happy hacking
