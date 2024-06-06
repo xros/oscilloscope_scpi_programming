@@ -8,7 +8,7 @@ By Songhua Liu
 
 My Oscilloscope is Rigol DHO924S (12bit, 250MHz, 1.25GSa/s, 50Mpts) which has AFG (Arbitrary Function Generator) and LA (Logic Analyser) built-in.
 
-Docs can be found from [here](static/DHO900_pdf_files_en/) or its [website](https://www.rigol.com/).
+Docs can be found from [here in English](static/DHO900_pdf_files_en/) and [here in Chinese 中文文档](static/DHO900_pdf_files_cn) or its [website](https://www.rigol.com/).
 
 #### Properties of the Oscilloscope
 
