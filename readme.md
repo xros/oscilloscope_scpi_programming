@@ -105,6 +105,18 @@ You will receive something like
 
 ![n](static/image/Screenshot_20240604_132722.png)
 
+##### Find USB device on PC using Rigol Ultra Sigma software
+
+Firstly you need to install the driver. Please visit here to download the lasted windows driver for Rigol Oscilloscope. Currently it only has Windows version.
+
+Install the driver. Download link: [UltraSigma Instrument Connectivity Driver(Ultra Sigma)](https://www.rigolna.com/products/rigol-digital-oscilloscopes/dho900/)
+
+![image1](static/image/tempsnip.png)
+
+Test the SCPI commands on Windows using Rigol Ultra Sigma via USB
+
+![image2](static/image/Untitled.png)
+
 #### Operate SCPI commands
 
 ```python
